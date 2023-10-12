@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonas Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/99c2f1d2d2.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <nav>
+        <!-- <img src="Assets/logo.png" class="logo"> -->
+        <h3><span>J</span>onas.</h3>
+        <ul id="sidemenu">
+            <li><a href="#header" onclick="closemenu()">Home</a></li>
+            <li><a href="#about" onclick="closemenu()">About</a></li>
+            <li><a href="#portfolio" onclick="closemenu()">Portfolio</a></li>
+            <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div id="header">
+        <div class="container">
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Jonas</span><br>Steven From Binus</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------About---------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Assets/user_2.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>An ambitious student in the computer science department at bina nusantara university who has a high enthusiasm for Web Development and interested to learn new things in a new environment. Also eager to learn from suggestions and feedbacks from others.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Soft Skills</span></li>
+                            <li>Html</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                            <li>PHP</li>
+                            <li>Laravel</li>
+                            <li>MySQL</li>
+                            <li><span>Hard Skills</span></li>
+                            <li>Communication</li>
+                            <li>Teamwork</li>
+                            <li>Time Management</li>
+                            <li>Problem Solving</li>
+                            <li>Leadership</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Author</span></li>
+                            <li>Published a paper entitled "Comparing Artificial Neural Network and Decision Tree Algorithm to Predict Tides at Tanjung Priok Port"<br>(ICCSCI - 2023)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Computer Science (Bachelor Degree)</span></li>
+                            <li>Binus University<br>(2021 - 2025)</li>
+                            <li><span>Senior High School</span></li>
+                            <li>SMAN 1 Bunguran Timur<br>(2018 - 2021)</li>
+                            <li><span>Junior High School</span></li>
+                            <li>SMPN 1 Bunguran Barat<br>(2015 - 2018)</li>
+                            <li><span>Elementary School</span></li>
+                            <li>SDN 1 Bunguran Barat<br>(2009 - 2015)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------Portfolio---------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Project</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="Assets/vclean_project.png">
+                    <div class="layer">
+                        <h3>VClean Website</h3>
+                        <p>VClean is an online car wash website that can help people who don’t have time to wash their car. Download the source code by clicking the link below</p>
+                        <div class="mid-side">
+                            <a href="https://github.com/JonasSteven/VClean"><i class="fas fa-code"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="Assets/mtgraphy_project.png">
+                    <div class="layer">
+                        <h3>MTGraphy Website</h3>
+                        <p>MTGraphy is a photography seller website. The MTgraphy website provides services such as booking and professional photographers who have a lot of experience. Download the source code by clicking the link below</p>
+                        <div class="row">
+                            <div class="left-side">
+                                <a href="https://github.com/JonasSteven/MTGraphy"><i class="fas fa-code"></i></a>
+                            </div>
+                            <div class="right-side">
+                                <a href="https://mtgraphy-website.vercel.app/"><i class="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="project">
+                    <img src="Assets/pisonz_project.png">
+                    <div class="layer">
+                        <h3>Pisonz Store Website</h3>
+                        <p>Pisonz Store is a website that provides online game resource purchase services that can fulfill the needs of gamers. With this website, gamers can easily top up instantly.</p>
+                        <div class="row">
+                            <div class="left-side">
+                                <a href="#"><i class="fas fa-code"></i></a>
+                            </div>
+                            <div class="right-side">
+                                <a href="#"><i class="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <!-- <a href="#" class="btn">See More</a> -->
+        </div>
+    </div>
+
+    <!-- ----------Contact---------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> jonas.steven@binus.ac.id</p>
+                    <p><i class="fab fa-line"></i> jonasstev31</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/jonas.steven.129"><i class="fab fa-facebook"></i></a>
+                        <a href="https://wa.me/6281266001895"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/jonastv31/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/jonas-steven-925965291/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="Assets/Jonas_Steven - CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2023 Jonas Steven. All Rights Reserved</p>
+        </div>
+    </div>
+    <script>
+        var tab_links = document.getElementsByClassName("tab-links");
+        var tab_contents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tab_name){
+            for(tab_link of tab_links){
+                tab_link.classList.remove("active-link");
+            }
+
+            for(tab_content of tab_contents){
+                tab_content.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tab_name).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxuMKqgvA_LaXcjCAivYzmCXbvai1eUKOkEsIrhQwpH47OIg1wQupmipBZrGghbSSkmLw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+    
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
